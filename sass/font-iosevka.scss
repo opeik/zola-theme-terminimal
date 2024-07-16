@@ -1,13 +1,18 @@
+html {
+  /* Base font size */
+  font-size: 17px;
+}
+
 body {
-    font-family: Iosevka Web, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
+  font-family: Iosevka Web, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
 }
 
 code {
-    font-family: Iosevka Web, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
+  font-family: Iosevka Web, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
 }
 
 pre {
-    font-family: Iosevka Web, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
+  font-family: Iosevka Web, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
 }
 
 /*!
@@ -15,631 +20,631 @@ pre {
  *  License: https://github.com/be5invis/Iosevka/blob/main/LICENSE.md
  */
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 100;
-    font-stretch: normal;
-    font-style: normal;
-    src: url('fonts/iosevka/Iosevka-Thin.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  src: url('fonts/iosevka/Iosevka-Thin.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 100;
-    font-stretch: expanded;
-    font-style: normal;
-    src: url('fonts/iosevka/Iosevka-ExtendedThin.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 100;
+  font-stretch: expanded;
+  font-style: normal;
+  src: url('fonts/iosevka/Iosevka-ExtendedThin.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 100;
-    font-stretch: normal;
-    font-style: oblique;
-    src: url('fonts/iosevka/Iosevka-ThinOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: oblique;
+  src: url('fonts/iosevka/Iosevka-ThinOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web Oblique';
-    font-display: swap;
-    font-weight: 100;
-    font-stretch: normal;
-    src: url('fonts/iosevka/Iosevka-ThinOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web Oblique';
+  font-display: swap;
+  font-weight: 100;
+  font-stretch: normal;
+  src: url('fonts/iosevka/Iosevka-ThinOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 100;
-    font-stretch: expanded;
-    font-style: oblique;
-    src: url('fonts/iosevka/Iosevka-ExtendedThinOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 100;
+  font-stretch: expanded;
+  font-style: oblique;
+  src: url('fonts/iosevka/Iosevka-ExtendedThinOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web Oblique';
-    font-display: swap;
-    font-weight: 100;
-    font-stretch: expanded;
-    src: url('fonts/iosevka/Iosevka-ExtendedThinOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web Oblique';
+  font-display: swap;
+  font-weight: 100;
+  font-stretch: expanded;
+  src: url('fonts/iosevka/Iosevka-ExtendedThinOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 100;
-    font-stretch: normal;
-    font-style: italic;
-    src: url('fonts/iosevka/Iosevka-ThinItalic.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: italic;
+  src: url('fonts/iosevka/Iosevka-ThinItalic.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 100;
-    font-stretch: expanded;
-    font-style: italic;
-    src: url('fonts/iosevka/Iosevka-ExtendedThinItalic.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 100;
+  font-stretch: expanded;
+  font-style: italic;
+  src: url('fonts/iosevka/Iosevka-ExtendedThinItalic.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 200;
-    font-stretch: normal;
-    font-style: normal;
-    src: url('fonts/iosevka/Iosevka-ExtraLight.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: normal;
+  src: url('fonts/iosevka/Iosevka-ExtraLight.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 200;
-    font-stretch: expanded;
-    font-style: normal;
-    src: url('fonts/iosevka/Iosevka-ExtendedExtraLight.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 200;
+  font-stretch: expanded;
+  font-style: normal;
+  src: url('fonts/iosevka/Iosevka-ExtendedExtraLight.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 200;
-    font-stretch: normal;
-    font-style: oblique;
-    src: url('fonts/iosevka/Iosevka-ExtraLightOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: oblique;
+  src: url('fonts/iosevka/Iosevka-ExtraLightOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web Oblique';
-    font-display: swap;
-    font-weight: 200;
-    font-stretch: normal;
-    src: url('fonts/iosevka/Iosevka-ExtraLightOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web Oblique';
+  font-display: swap;
+  font-weight: 200;
+  font-stretch: normal;
+  src: url('fonts/iosevka/Iosevka-ExtraLightOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 200;
-    font-stretch: expanded;
-    font-style: oblique;
-    src: url('fonts/iosevka/Iosevka-ExtendedExtraLightOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 200;
+  font-stretch: expanded;
+  font-style: oblique;
+  src: url('fonts/iosevka/Iosevka-ExtendedExtraLightOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web Oblique';
-    font-display: swap;
-    font-weight: 200;
-    font-stretch: expanded;
-    src: url('fonts/iosevka/Iosevka-ExtendedExtraLightOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web Oblique';
+  font-display: swap;
+  font-weight: 200;
+  font-stretch: expanded;
+  src: url('fonts/iosevka/Iosevka-ExtendedExtraLightOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 200;
-    font-stretch: normal;
-    font-style: italic;
-    src: url('fonts/iosevka/Iosevka-ExtraLightItalic.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: italic;
+  src: url('fonts/iosevka/Iosevka-ExtraLightItalic.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 200;
-    font-stretch: expanded;
-    font-style: italic;
-    src: url('fonts/iosevka/Iosevka-ExtendedExtraLightItalic.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 200;
+  font-stretch: expanded;
+  font-style: italic;
+  src: url('fonts/iosevka/Iosevka-ExtendedExtraLightItalic.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    src: url('fonts/iosevka/Iosevka-Light.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  src: url('fonts/iosevka/Iosevka-Light.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 300;
-    font-stretch: expanded;
-    font-style: normal;
-    src: url('fonts/iosevka/Iosevka-ExtendedLight.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 300;
+  font-stretch: expanded;
+  font-style: normal;
+  src: url('fonts/iosevka/Iosevka-ExtendedLight.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: oblique;
-    src: url('fonts/iosevka/Iosevka-LightOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: oblique;
+  src: url('fonts/iosevka/Iosevka-LightOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web Oblique';
-    font-display: swap;
-    font-weight: 300;
-    font-stretch: normal;
-    src: url('fonts/iosevka/Iosevka-LightOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web Oblique';
+  font-display: swap;
+  font-weight: 300;
+  font-stretch: normal;
+  src: url('fonts/iosevka/Iosevka-LightOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 300;
-    font-stretch: expanded;
-    font-style: oblique;
-    src: url('fonts/iosevka/Iosevka-ExtendedLightOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 300;
+  font-stretch: expanded;
+  font-style: oblique;
+  src: url('fonts/iosevka/Iosevka-ExtendedLightOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web Oblique';
-    font-display: swap;
-    font-weight: 300;
-    font-stretch: expanded;
-    src: url('fonts/iosevka/Iosevka-ExtendedLightOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web Oblique';
+  font-display: swap;
+  font-weight: 300;
+  font-stretch: expanded;
+  src: url('fonts/iosevka/Iosevka-ExtendedLightOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: italic;
-    src: url('fonts/iosevka/Iosevka-LightItalic.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  src: url('fonts/iosevka/Iosevka-LightItalic.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 300;
-    font-stretch: expanded;
-    font-style: italic;
-    src: url('fonts/iosevka/Iosevka-ExtendedLightItalic.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 300;
+  font-stretch: expanded;
+  font-style: italic;
+  src: url('fonts/iosevka/Iosevka-ExtendedLightItalic.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 400;
-    font-stretch: normal;
-    font-style: normal;
-    src: url('fonts/iosevka/Iosevka-Regular.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  src: url('fonts/iosevka/Iosevka-Regular.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 400;
-    font-stretch: expanded;
-    font-style: normal;
-    src: url('fonts/iosevka/Iosevka-Extended.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: expanded;
+  font-style: normal;
+  src: url('fonts/iosevka/Iosevka-Extended.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 400;
-    font-stretch: normal;
-    font-style: oblique;
-    src: url('fonts/iosevka/Iosevka-Oblique.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: oblique;
+  src: url('fonts/iosevka/Iosevka-Oblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web Oblique';
-    font-display: swap;
-    font-weight: 400;
-    font-stretch: normal;
-    src: url('fonts/iosevka/Iosevka-Oblique.woff2') format('woff2');
+  font-family: 'Iosevka Web Oblique';
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: normal;
+  src: url('fonts/iosevka/Iosevka-Oblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 400;
-    font-stretch: expanded;
-    font-style: oblique;
-    src: url('fonts/iosevka/Iosevka-ExtendedOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: expanded;
+  font-style: oblique;
+  src: url('fonts/iosevka/Iosevka-ExtendedOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web Oblique';
-    font-display: swap;
-    font-weight: 400;
-    font-stretch: expanded;
-    src: url('fonts/iosevka/Iosevka-ExtendedOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web Oblique';
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: expanded;
+  src: url('fonts/iosevka/Iosevka-ExtendedOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 400;
-    font-stretch: normal;
-    font-style: italic;
-    src: url('fonts/iosevka/Iosevka-Italic.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: italic;
+  src: url('fonts/iosevka/Iosevka-Italic.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 400;
-    font-stretch: expanded;
-    font-style: italic;
-    src: url('fonts/iosevka/Iosevka-ExtendedItalic.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: expanded;
+  font-style: italic;
+  src: url('fonts/iosevka/Iosevka-ExtendedItalic.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    src: url('fonts/iosevka/Iosevka-Medium.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  src: url('fonts/iosevka/Iosevka-Medium.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 500;
-    font-stretch: expanded;
-    font-style: normal;
-    src: url('fonts/iosevka/Iosevka-ExtendedMedium.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 500;
+  font-stretch: expanded;
+  font-style: normal;
+  src: url('fonts/iosevka/Iosevka-ExtendedMedium.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: oblique;
-    src: url('fonts/iosevka/Iosevka-MediumOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: oblique;
+  src: url('fonts/iosevka/Iosevka-MediumOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web Oblique';
-    font-display: swap;
-    font-weight: 500;
-    font-stretch: normal;
-    src: url('fonts/iosevka/Iosevka-MediumOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web Oblique';
+  font-display: swap;
+  font-weight: 500;
+  font-stretch: normal;
+  src: url('fonts/iosevka/Iosevka-MediumOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 500;
-    font-stretch: expanded;
-    font-style: oblique;
-    src: url('fonts/iosevka/Iosevka-ExtendedMediumOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 500;
+  font-stretch: expanded;
+  font-style: oblique;
+  src: url('fonts/iosevka/Iosevka-ExtendedMediumOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web Oblique';
-    font-display: swap;
-    font-weight: 500;
-    font-stretch: expanded;
-    src: url('fonts/iosevka/Iosevka-ExtendedMediumOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web Oblique';
+  font-display: swap;
+  font-weight: 500;
+  font-stretch: expanded;
+  src: url('fonts/iosevka/Iosevka-ExtendedMediumOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: italic;
-    src: url('fonts/iosevka/Iosevka-MediumItalic.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: italic;
+  src: url('fonts/iosevka/Iosevka-MediumItalic.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 500;
-    font-stretch: expanded;
-    font-style: italic;
-    src: url('fonts/iosevka/Iosevka-ExtendedMediumItalic.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 500;
+  font-stretch: expanded;
+  font-style: italic;
+  src: url('fonts/iosevka/Iosevka-ExtendedMediumItalic.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    src: url('fonts/iosevka/Iosevka-SemiBold.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  src: url('fonts/iosevka/Iosevka-SemiBold.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 600;
-    font-stretch: expanded;
-    font-style: normal;
-    src: url('fonts/iosevka/Iosevka-ExtendedSemiBold.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 600;
+  font-stretch: expanded;
+  font-style: normal;
+  src: url('fonts/iosevka/Iosevka-ExtendedSemiBold.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: oblique;
-    src: url('fonts/iosevka/Iosevka-SemiBoldOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: oblique;
+  src: url('fonts/iosevka/Iosevka-SemiBoldOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web Oblique';
-    font-display: swap;
-    font-weight: 600;
-    font-stretch: normal;
-    src: url('fonts/iosevka/Iosevka-SemiBoldOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web Oblique';
+  font-display: swap;
+  font-weight: 600;
+  font-stretch: normal;
+  src: url('fonts/iosevka/Iosevka-SemiBoldOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 600;
-    font-stretch: expanded;
-    font-style: oblique;
-    src: url('fonts/iosevka/Iosevka-ExtendedSemiBoldOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 600;
+  font-stretch: expanded;
+  font-style: oblique;
+  src: url('fonts/iosevka/Iosevka-ExtendedSemiBoldOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web Oblique';
-    font-display: swap;
-    font-weight: 600;
-    font-stretch: expanded;
-    src: url('fonts/iosevka/Iosevka-ExtendedSemiBoldOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web Oblique';
+  font-display: swap;
+  font-weight: 600;
+  font-stretch: expanded;
+  src: url('fonts/iosevka/Iosevka-ExtendedSemiBoldOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: italic;
-    src: url('fonts/iosevka/Iosevka-SemiBoldItalic.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: italic;
+  src: url('fonts/iosevka/Iosevka-SemiBoldItalic.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 600;
-    font-stretch: expanded;
-    font-style: italic;
-    src: url('fonts/iosevka/Iosevka-ExtendedSemiBoldItalic.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 600;
+  font-stretch: expanded;
+  font-style: italic;
+  src: url('fonts/iosevka/Iosevka-ExtendedSemiBoldItalic.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 700;
-    font-stretch: normal;
-    font-style: normal;
-    src: url('fonts/iosevka/Iosevka-Bold.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  src: url('fonts/iosevka/Iosevka-Bold.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 700;
-    font-stretch: expanded;
-    font-style: normal;
-    src: url('fonts/iosevka/Iosevka-ExtendedBold.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: expanded;
+  font-style: normal;
+  src: url('fonts/iosevka/Iosevka-ExtendedBold.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 700;
-    font-stretch: normal;
-    font-style: oblique;
-    src: url('fonts/iosevka/Iosevka-BoldOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: oblique;
+  src: url('fonts/iosevka/Iosevka-BoldOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web Oblique';
-    font-display: swap;
-    font-weight: 700;
-    font-stretch: normal;
-    src: url('fonts/iosevka/Iosevka-BoldOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web Oblique';
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: normal;
+  src: url('fonts/iosevka/Iosevka-BoldOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 700;
-    font-stretch: expanded;
-    font-style: oblique;
-    src: url('fonts/iosevka/Iosevka-ExtendedBoldOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: expanded;
+  font-style: oblique;
+  src: url('fonts/iosevka/Iosevka-ExtendedBoldOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web Oblique';
-    font-display: swap;
-    font-weight: 700;
-    font-stretch: expanded;
-    src: url('fonts/iosevka/Iosevka-ExtendedBoldOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web Oblique';
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: expanded;
+  src: url('fonts/iosevka/Iosevka-ExtendedBoldOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 700;
-    font-stretch: normal;
-    font-style: italic;
-    src: url('fonts/iosevka/Iosevka-BoldItalic.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: italic;
+  src: url('fonts/iosevka/Iosevka-BoldItalic.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 700;
-    font-stretch: expanded;
-    font-style: italic;
-    src: url('fonts/iosevka/Iosevka-ExtendedBoldItalic.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: expanded;
+  font-style: italic;
+  src: url('fonts/iosevka/Iosevka-ExtendedBoldItalic.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    src: url('fonts/iosevka/Iosevka-ExtraBold.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  src: url('fonts/iosevka/Iosevka-ExtraBold.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 800;
-    font-stretch: expanded;
-    font-style: normal;
-    src: url('fonts/iosevka/Iosevka-ExtendedExtraBold.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 800;
+  font-stretch: expanded;
+  font-style: normal;
+  src: url('fonts/iosevka/Iosevka-ExtendedExtraBold.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: oblique;
-    src: url('fonts/iosevka/Iosevka-ExtraBoldOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: oblique;
+  src: url('fonts/iosevka/Iosevka-ExtraBoldOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web Oblique';
-    font-display: swap;
-    font-weight: 800;
-    font-stretch: normal;
-    src: url('fonts/iosevka/Iosevka-ExtraBoldOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web Oblique';
+  font-display: swap;
+  font-weight: 800;
+  font-stretch: normal;
+  src: url('fonts/iosevka/Iosevka-ExtraBoldOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 800;
-    font-stretch: expanded;
-    font-style: oblique;
-    src: url('fonts/iosevka/Iosevka-ExtendedExtraBoldOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 800;
+  font-stretch: expanded;
+  font-style: oblique;
+  src: url('fonts/iosevka/Iosevka-ExtendedExtraBoldOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web Oblique';
-    font-display: swap;
-    font-weight: 800;
-    font-stretch: expanded;
-    src: url('fonts/iosevka/Iosevka-ExtendedExtraBoldOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web Oblique';
+  font-display: swap;
+  font-weight: 800;
+  font-stretch: expanded;
+  src: url('fonts/iosevka/Iosevka-ExtendedExtraBoldOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: italic;
-    src: url('fonts/iosevka/Iosevka-ExtraBoldItalic.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: italic;
+  src: url('fonts/iosevka/Iosevka-ExtraBoldItalic.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 800;
-    font-stretch: expanded;
-    font-style: italic;
-    src: url('fonts/iosevka/Iosevka-ExtendedExtraBoldItalic.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 800;
+  font-stretch: expanded;
+  font-style: italic;
+  src: url('fonts/iosevka/Iosevka-ExtendedExtraBoldItalic.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 900;
-    font-stretch: normal;
-    font-style: normal;
-    src: url('fonts/iosevka/Iosevka-Heavy.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  src: url('fonts/iosevka/Iosevka-Heavy.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 900;
-    font-stretch: expanded;
-    font-style: normal;
-    src: url('fonts/iosevka/Iosevka-ExtendedHeavy.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 900;
+  font-stretch: expanded;
+  font-style: normal;
+  src: url('fonts/iosevka/Iosevka-ExtendedHeavy.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 900;
-    font-stretch: normal;
-    font-style: oblique;
-    src: url('fonts/iosevka/Iosevka-HeavyOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: oblique;
+  src: url('fonts/iosevka/Iosevka-HeavyOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web Oblique';
-    font-display: swap;
-    font-weight: 900;
-    font-stretch: normal;
-    src: url('fonts/iosevka/Iosevka-HeavyOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web Oblique';
+  font-display: swap;
+  font-weight: 900;
+  font-stretch: normal;
+  src: url('fonts/iosevka/Iosevka-HeavyOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 900;
-    font-stretch: expanded;
-    font-style: oblique;
-    src: url('fonts/iosevka/Iosevka-ExtendedHeavyOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 900;
+  font-stretch: expanded;
+  font-style: oblique;
+  src: url('fonts/iosevka/Iosevka-ExtendedHeavyOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web Oblique';
-    font-display: swap;
-    font-weight: 900;
-    font-stretch: expanded;
-    src: url('fonts/iosevka/Iosevka-ExtendedHeavyOblique.woff2') format('woff2');
+  font-family: 'Iosevka Web Oblique';
+  font-display: swap;
+  font-weight: 900;
+  font-stretch: expanded;
+  src: url('fonts/iosevka/Iosevka-ExtendedHeavyOblique.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 900;
-    font-stretch: normal;
-    font-style: italic;
-    src: url('fonts/iosevka/Iosevka-HeavyItalic.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: italic;
+  src: url('fonts/iosevka/Iosevka-HeavyItalic.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Iosevka Web';
-    font-display: swap;
-    font-weight: 900;
-    font-stretch: expanded;
-    font-style: italic;
-    src: url('fonts/iosevka/Iosevka-ExtendedHeavyItalic.woff2') format('woff2');
+  font-family: 'Iosevka Web';
+  font-display: swap;
+  font-weight: 900;
+  font-stretch: expanded;
+  font-style: italic;
+  src: url('fonts/iosevka/Iosevka-ExtendedHeavyItalic.woff2') format('woff2');
 }
