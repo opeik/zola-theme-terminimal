@@ -28,7 +28,7 @@
 {% macro open_graph(config) %}
 {%- if page %}
     {%- set permalink = page.permalink %}
-    {%- set title = title_macros::title(page_title=page.title, main_title=config.title) %}
+    {%- set title = page.title %}
     {%- set description = page.description %}
     {%- set type = "article" %}
     {%- if page.extra and page.extra.og_image %}
@@ -42,7 +42,7 @@
     {%- endif %}
 {%- elif section %}
     {%- set permalink = section.permalink %}
-    {%- set title = title_macros::title(page_title=section.title, main_title=config.title) %}
+    {%- set title = section.title %}
     {%- set description = section.description | default(value=config.description) %}
     {%- set type = "website" %}
     {%- if section.extra and section.extra.og_image %}
@@ -55,17 +55,17 @@
     {%- if taxonomy %}
         {% if term %}
             {%- set permalink = term.permalink %}
-            {%- set title = title_macros::title(page_title=term.name, main_title=config.title) %}
-            {%- set description = "all posts tagged " ~ term.name %}
+            {%- set title = term.name %}
+            {%- set description = "all posts tagged #" ~ term.name %}
         {% else %}
             {%- set permalink = config.base_url ~ "/" ~ taxonomy.slug %}
-            {%- set title = title_macros::title(page_title=taxonomy.name, main_title=config.title) %}
+            {%- set title = taxonomy.name %}
             {%- set description = "all " ~ taxonomy.name %}
         {% endif %}
     {%- else %}
         {%- set permalink = config.base_url %}
-        {%- set title = title_macros::title(page_title="404", main_title=config.title) %}
-        {%- set description = "Page not found" %}
+        {%- set title = "404" %}
+        {%- set description = "page not found" %}
     {%- endif %}
     {%- set type = "website" %}
     {%- if config.extra.default_og_image %}
