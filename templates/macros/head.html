@@ -56,11 +56,11 @@
         {% if term %}
             {%- set permalink = term.permalink %}
             {%- set title = title_macros::title(page_title=term.name, main_title=config.title) %}
-            {%- set description = "All posts tagged " ~ term.name %}
+            {%- set description = "all posts tagged " ~ term.name %}
         {% else %}
             {%- set permalink = config.base_url ~ "/" ~ taxonomy.slug %}
             {%- set title = title_macros::title(page_title=taxonomy.name, main_title=config.title) %}
-            {%- set description = "All " ~ taxonomy.name %}
+            {%- set description = "all " ~ taxonomy.name %}
         {% endif %}
     {%- else %}
         {%- set permalink = config.base_url %}
@@ -78,6 +78,7 @@
     <meta property="og:title" content="{{ title | safe }}">
     <meta property="og:type" content="{{ type }}">
     <meta property="og:url" content="{{ permalink | safe }}">
+    <meta property="og:site_name" content="{{ config.title | safe }}">
 {% if og_image %}
     <meta property="og:image" content="{{ get_url(path=og_image) }}">
     <meta name="twitter:image" content="{{ get_url(path=og_image) }}">
