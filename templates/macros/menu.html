@@ -45,8 +45,32 @@
                     {%- endif -%}
                 </li>
             {% endfor -%}
+
+                <li>
+                    <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar"
+                        aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        🔎
+                    </button>
+                </li>
             </ul>
+
+
         </nav>
+
+        <div id="search-wrapper" class="hidden">
+            <form id="searchbar-outer" class="searchbar-outer">
+                <input type="search" id="searchbar" name="searchbar" placeholder="Search..."
+                    aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+            </form>
+            <div id="searchresults-outer" class="searchresults-outer hidden">
+                <div id="searchresults-header" class="searchresults-header"></div>
+                <ul id="searchresults">
+                </ul>
+            </div>
+        </div>
+
+        <script src="{{ get_url(path='elasticlunr.min.js') }}"></script>
+        <script src="{{ get_url(path='mark.min.js') }}"></script>
+        <script src="{{ get_url(path='search.js') }}"></script>
     {% endif -%}
 {% endmacro menu %}
-

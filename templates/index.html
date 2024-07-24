@@ -13,13 +13,16 @@
 
     {%- block open_graph %}{{ head_macros::open_graph(config=config) }}{% endblock open_graph -%}
 
-    {%- if config.generate_feed %}
-        {%- if "rss" in config.feed_filename %}
-            {% set feed_type = 'rss+xml' %}
-        {%- else %}
-            {% set feed_type = 'atom+xml' %}
-        {% endif -%}
-        <link rel="alternate" type="application/{{ feed_type }}" title="RSS" href="{{ get_url(path=config.feed_filename) | safe }}">
+
+    {%- if config.generate_feeds %}
+        {%- for feed_filename in config.feed_filenames %}
+            {%- if "rss" in feed_filename %}
+                {% set feed_type = 'rss+xml' %}
+            {%- else %}
+                {% set feed_type = 'atom+xml' %}
+            {% endif -%}
+            <link rel="alternate" type="application/{{ feed_type }}" title="RSS" href="{{ get_url(path=feed_filename) | safe }}">
+        {% endfor -%}
     {% endif -%}
 
     {%- if config.extra.favicon %}
@@ -34,7 +37,7 @@
     {% endblock extra_head -%}
 </head>
 
-<body class="">
+<body>
 <div class="container">
     {% block header %}
     <header class="header">
@@ -65,7 +68,7 @@
     </header>
     {% endblock header %}
 
-    <div class="content">
+    <div class="content" id="content">
         {% block content %}
         <div class="posts">
             {%- if paginator %}

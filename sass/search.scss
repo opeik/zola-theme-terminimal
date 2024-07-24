@@ -1,0 +1,95 @@
+#searchresults a {
+    text-decoration: none;
+}
+
+mark {
+    border-radius: 2px;
+    padding-block-start: 0;
+    padding-block-end: 1px;
+    padding-inline-start: 3px;
+    padding-inline-end: 3px;
+    margin-block-start: 0;
+    margin-block-end: -1px;
+    margin-inline-start: -3px;
+    margin-inline-end: -3px;
+    background-color: var(--search-mark-bg);
+    transition: background-color 300ms linear;
+    cursor: pointer;
+}
+
+mark.fade-out {
+    background-color: rgba(0, 0, 0, 0) !important;
+    cursor: auto;
+}
+
+.searchbar-outer {
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    max-width: var(--content-max-width);
+}
+
+#searchbar {
+    width: 100%;
+    margin-block-start: 5px;
+    margin-block-end: 0;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    padding: 10px 16px;
+    transition: box-shadow 300ms ease-in-out;
+    border: 1px solid var(--searchbar-border-color);
+    border-radius: 3px;
+    background-color: var(--searchbar-bg);
+    color: var(--searchbar-fg);
+}
+
+#searchbar:focus,
+#searchbar.active {
+    box-shadow: 0 0 3px var(--searchbar-shadow-color);
+}
+
+.searchresults-header {
+    font-weight: bold;
+    font-size: 1em;
+    padding-block-start: 18px;
+    padding-block-end: 0;
+    padding-inline-start: 5px;
+    padding-inline-end: 0;
+    color: var(--searchresults-header-fg);
+}
+
+.searchresults-outer {
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    max-width: var(--content-max-width);
+    border-block-end: 1px dashed var(--searchresults-border-color);
+}
+
+ul#searchresults {
+    list-style: none;
+    padding-inline-start: 20px;
+}
+
+ul#searchresults li {
+    margin: 10px 0px;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+ul#searchresults li.focus {
+    background-color: var(--searchresults-li-bg);
+}
+
+ul#searchresults span.teaser {
+    display: block;
+    clear: both;
+    margin-block-start: 5px;
+    margin-block-end: 0;
+    margin-inline-start: 20px;
+    margin-inline-end: 0;
+    font-size: 0.8em;
+}
+
+ul#searchresults span.teaser em {
+    font-weight: bold;
+    font-style: normal;
+}
