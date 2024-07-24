@@ -38,7 +38,7 @@
     {% endblock extra_head -%}
 </head>
 
-<body class="">
+<body>
 <div class="container">
     {% block header %}
     <header class="header">
@@ -69,7 +69,7 @@
     </header>
     {% endblock header %}
 
-    <div class="content">
+    <div class="content" id="content">
         {% block content %}
         <div class="posts">
             {%- if paginator %}
