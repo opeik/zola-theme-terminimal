@@ -10,13 +10,6 @@ window.search = window.search || {};
         return;
     }
 
-    //IE 11 Compatibility from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith
-    if (!String.prototype.startsWith) {
-        String.prototype.startsWith = function (search, pos) {
-            return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
-        };
-    }
-
     var search_wrap = document.getElementById('search-wrapper'),
         searchbar = document.getElementById('searchbar'),
         searchbar_outer = document.getElementById('searchbar-outer'),
@@ -24,7 +17,7 @@ window.search = window.search || {};
         searchresults_outer = document.getElementById('searchresults-outer'),
         searchresults_header = document.getElementById('searchresults-header'),
         searchicon = document.getElementById('search-toggle'),
-        content = document.getElementById('content'),
+        content = document.getElementById('post-content'),
 
         searchindex = null,
         results_options = {
@@ -136,19 +129,14 @@ window.search = window.search || {};
     function formatSearchResult(result, searchterms) {
         var teaser = makeTeaser(escapeHTML(result.doc.body), searchterms);
         teaser_count++;
-
-        // The ?URL_MARK_PARAM= parameter belongs inbetween the page and the #heading-anchor
-        var url = result.ref.split("#");
-        if (url.length == 1) { // no anchor found
-            url.push("");
-        }
+        var url = result.ref
 
         // encodeURIComponent escapes all chars that could allow an XSS except
         // for '. Due to that we also manually replace ' with its url-encoded
         // representation (%27).
         var searchterms = encodeURIComponent(searchterms.join(" ")).replace(/\'/g, "%27");
 
-        return '<a href="' + url[0] + '?' + URL_MARK_PARAM + '=' + searchterms + '#' + url[1]
+        return '<a href="' + url + '?' + URL_MARK_PARAM + '=' + searchterms
             + '" aria-details="teaser_' + teaser_count + '">' + result.doc.title + '</a>'
             + '<span class="teaser" id="teaser_' + teaser_count + '" aria-label="Search Result Teaser">'
             + teaser + '</span>';
@@ -251,9 +239,6 @@ window.search = window.search || {};
     }
 
     function init(config) {
-        // results_options = config.results_options;
-        // search_options = config.search_options;
-        // searchbar_outer = config.searchbar_outer;
         results_options = {
             teaser_word_count: 30,
             limit_results: 30,
@@ -319,6 +304,10 @@ window.search = window.search || {};
             }
             for (var i = 0; i < markers.length; i++) {
                 markers[i].addEventListener('click', hide);
+            }
+
+            if (markers.length >= 1) {
+                markers[0].scrollIntoView();
             }
         }
     }

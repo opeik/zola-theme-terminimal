@@ -1,5 +1,11 @@
+:root {
+    --search-result-fg: #ffadad;
+    --search-mark-bg: #ffadad;
+}
+
 #searchresults a {
     text-decoration: none;
+    color: var(--accent);
 }
 
 mark {
@@ -25,7 +31,7 @@ mark.fade-out {
 .searchbar-outer {
     margin-inline-start: auto;
     margin-inline-end: auto;
-    max-width: var(--content-max-width);
+    max-width: 100%;
 }
 
 #searchbar {
@@ -35,33 +41,68 @@ mark.fade-out {
     margin-inline-start: auto;
     margin-inline-end: auto;
     padding: 10px 16px;
-    transition: box-shadow 300ms ease-in-out;
-    border: 1px solid var(--searchbar-border-color);
-    border-radius: 3px;
-    background-color: var(--searchbar-bg);
-    color: var(--searchbar-fg);
+    border: none;
+    border-bottom: 3px dotted var(--border-color);
+    background-color: transparent;
+    color: inherit;
+    font-size: 1rem;
 }
 
-#searchbar:focus,
-#searchbar.active {
-    box-shadow: 0 0 3px var(--searchbar-shadow-color);
+#search-toggle {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    display: initial;
+    margin-bottom: initial;
+    padding: initial;
+}
+
+#searchbar:focus {
+    outline: none;
+}
+
+#searchbar-outer {
+    position: relative;
+}
+
+#searchbar-outer:hover:before,
+#searchbar-outer:focus-within:before {
+    opacity: 0.2 !important;
+}
+
+#searchbar-outer:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--accent);
+    transform: scaleY(.75) scaleX(1.01);
+    filter: blur(20px);
+    opacity: 0.0;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .searchresults-header {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1rem;
     padding-block-start: 18px;
     padding-block-end: 0;
     padding-inline-start: 5px;
     padding-inline-end: 0;
-    color: var(--searchresults-header-fg);
+    color: var(--color);
 }
 
 .searchresults-outer {
     margin-inline-start: auto;
     margin-inline-end: auto;
-    max-width: var(--content-max-width);
-    border-block-end: 1px dashed var(--searchresults-border-color);
+    max-width: 100%;
+    border-block-end: 1px solid var(--border-color);
 }
 
 ul#searchresults {
@@ -76,7 +117,7 @@ ul#searchresults li {
 }
 
 ul#searchresults li.focus {
-    background-color: var(--searchresults-li-bg);
+    background-color: rgba(var(--background), 0.5);
 }
 
 ul#searchresults span.teaser {
@@ -86,10 +127,11 @@ ul#searchresults span.teaser {
     margin-block-end: 0;
     margin-inline-start: 20px;
     margin-inline-end: 0;
-    font-size: 0.8em;
+    font-size: 0.9rem;
 }
 
 ul#searchresults span.teaser em {
-    font-weight: bold;
+    font-weight: 1000;
     font-style: normal;
+    color: var(--search-result-fg);
 }
