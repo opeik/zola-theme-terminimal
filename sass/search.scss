@@ -68,9 +68,8 @@ mark.fade-out {
     position: relative;
 }
 
-#searchbar-outer:hover:before,
 #searchbar-outer:focus-within:before {
-    opacity: 0.2 !important;
+    opacity: 0.2;
 }
 
 #searchbar-outer:before {
@@ -85,7 +84,7 @@ mark.fade-out {
     transform: scaleY(.75) scaleX(1.01);
     filter: blur(20px);
     opacity: 0.0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .searchresults-header {
@@ -116,8 +115,23 @@ ul#searchresults li {
     border-radius: 2px;
 }
 
-ul#searchresults li.focus {
-    background-color: rgba(var(--background), 0.5);
+ul#searchresults li.focus:before {
+    opacity: 0.2;
+}
+
+ul#searchresults li:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--accent);
+    transform: scaleY(1) scaleX(1.03);
+    filter: blur(20px);
+    opacity: 0.0;
+    transition: opacity 0.2s ease-in-out;
 }
 
 ul#searchresults span.teaser {
