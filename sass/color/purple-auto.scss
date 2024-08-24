@@ -1,27 +1,27 @@
 :root {
   @media (prefers-color-scheme: dark) {
-    --accent: rgb(224,64,192);
-    --accent-alpha-70: rgba(224,64,192);
-    --accent-alpha-20: rgba(224,64,192,.2);
+    --accent: rgb(171, 158, 239);
+    --accent-alpha-70: rgba(171, 158, 239, .7);
+    --accent-alpha-20: rgba(171, 158, 239, .2);
 
-    --background: #101010;
-    --color: #f0f0f0;
-    --border-color: rgba(255,240,224,.125);
-    
+    --background: #21202C;
+    --color: #fcfcfa;
+    --border-color: rgba(255, 255, 255, .1);
+
     div.logo {
       color: black;
     }
-  
+
   }
   @media (prefers-color-scheme: light) {
-    --accent: rgb(238,114,241);
-    --accent-alpha-70: rgba(238,114,241,.7);
-    --accent-alpha-20: rgba(238,114,241,.2);
-  
+    --accent: rgb(171, 158, 239);
+    --accent-alpha-70: rgba(171, 158, 239, .7);
+    --accent-alpha-20: rgba(171, 158, 239, .2);
+
     --background: white;
     --color: #201030;
     --border-color: rgba(0,0,16,.125);
-    
+
     div.logo {
       color: white;
     }
